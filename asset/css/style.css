@@ -1,0 +1,239 @@
+html{
+ box-sizing: border-box;
+}
+
+*,*::before,*::after{
+ box-sizing: inherit;
+}
+
+:root{
+   /* Colors Base */
+   /* --color-primary: #00d1b2;
+   --color-link: #3273dc; */
+   
+   /* Colors light */
+   /* --color-light-primary: #ebfffc;
+   --color-light-link: #eef3fc; */
+  
+   /* fonts-size */
+   /* --font-small: 0.75rem;
+   --font-normal: 1rem; */
+
+ /*  fuente */
+  --font-title : 'Montserrat', sans-serif;
+  --font-subtitle: 'Montserrat', sans-serif;
+  /* tamoño de fuente */
+  --title-size-movil: 50px;
+  --subtitle-size-movil: 32px;
+  --section-size-movil:18px;
+  --body-size-movil:16px;
+  --title-size-desktop: 150px;
+  --subtitle-size-desktop: 50px;
+  --section-size-desktop:45px;
+  --body-size-desktop:18px;
+
+  /* paleta de colores */
+  --color-title:#34b0b4;
+  --color-background: #242635;
+  --color-body:#03051c;
+  --color-contenta-and-subtitle: #d1ceca;
+  --color-paragraph:#ffffff;
+
+}
+body{
+    margin:0 ;
+    background-color: var(--color-body);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-paragraph);
+    font-size: var(--body-size-desktop);
+    width: 100%;
+
+}
+img{
+    width: 100%;
+}
+
+.hero-navbar{
+    width:100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-navbar nav{
+    padding:0 50px;
+    display: flex;
+    gap: 5rem;
+}
+
+.hero-navbar nav a{
+    color:var(--color-paragraph);
+    text-decoration:none; 
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.hero-navbar nav a:nth-child(1){
+    color: var(--color-title);
+}
+
+.hero-container{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 50% 50%;
+    /* grid-auto-rows:100% ; */
+    /* padding-left: 60px; */
+    margin-top:50px;
+     /* background-color: red; */
+
+}
+
+.hero-info{
+
+    font-size: var(--subtitle-size-desktop);
+    /* margin-top: 0; */
+    align-self: center;
+    padding-left: 60px;
+}
+
+.hero-info h1{
+    font-size: var(--title-size-desktop);
+    margin-bottom:0px;
+    /* background-color: lightcoral; */
+}
+.hero-info p{
+    margin-top:20px;
+}
+/* agregado ahora */
+/* .hero-info h2{
+    order:1;
+}
+.hero-info p{
+    order:3;
+} */
+/* fin de agregado */
+
+.hero-info h1 strong{
+    color:var(--color-title);
+}
+.hero-img-contorno{
+    z-index:-1;
+    width: 700px;
+    height: 700px;
+    border-radius: 100%;
+    background-color: var(--color-background);
+    align-self: flex-start;
+    justify-self: center;
+    
+    /* margin-right: 0; */
+    /* background-color: #34b0b4; */
+}
+
+.hero-img-contorno img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.hero-icon{
+    display: flex;
+    flex-direction: column;
+
+ }
+.hero-icon h2{
+    font-size: var(--subtitle-size-desktop);
+    margin-bottom: 1.5rem;
+    margin-top:0;
+
+}
+
+.hero-icon h2 strong{
+ color: var(--color-title);
+}
+.hero-icon div {
+ display: flex;
+ flex-direction: row;
+ gap: 1.5rem;
+ /* justify-content: center;   */
+ /* align-items: center; */
+ /* margin-top: 0; */
+
+}
+.hero-icon div div{
+    width: 65px; /*igual a 4rem*/
+    height: 65px;
+    background-color: var(--color-contenta-and-subtitle);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.hero-icon div div img{
+    width: 40px; /*igual a 2.5rem*/
+    height: 40px;
+}
+.hero-company{
+    grid-column: 1/4;
+    /* display: flex;
+    flex-direction: row; */
+    /* display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 100%; */
+    margin-top:70px
+    
+
+}
+
+.hero-company-container{
+    background-color: var(--color-background);
+    display: flex;
+    /* width: 200px;
+    height: 200px;  */
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+    border-radius: 5%;
+    /* width: 500px; */
+    margin:0 100px;
+    min-height: 50%;
+}
+
+.hero-company-container div {
+    background-color: var(--color-contenta-and-subtitle);
+    width: 225px;
+    height: 140px; 
+    border-radius:10% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.hero-company-container div img{
+    width: 110px;
+    height: 110px; 
+    
+    /* justify-content: center;
+    align-items: center; */
+}
+/* .hero-company div{
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: row ;
+    grid-column: 1/4;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
